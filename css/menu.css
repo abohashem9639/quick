@@ -1,0 +1,126 @@
+/* Define color variables in root */
+:root {
+    --primary-color: #0c0b0b;
+    --secondary-color: #FFFFFF;
+    --accent-color: #FF0000;
+    --discount-color: #FF4500;
+    --text-color: #FFFFFF;
+    --price-color: #FFFFFF;
+    --original-price-color: #808080;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.navbar, .navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+.btn-info {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: var(--text-color);
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: var(--price-color);
+    font-size: 1.1em;
+}
+
+.discount-badge {
+    background-color: var(--discount-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.original-price {
+    color: var(--original-price-color);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
+
+.form-check-input {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.form-check-label {
+    color: var(--text-color);
+}
+
+.rating-form {
+    display: none;
+}
